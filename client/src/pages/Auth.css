@@ -1,0 +1,13 @@
+.auth { padding: 50px 24px 24px; min-height: 100dvh; display: flex; flex-direction: column; }
+.auth-header { text-align: center; margin-bottom: 40px; }
+.auth-logo { font-family: var(--font-head); font-size: 26px; font-weight: 800; letter-spacing: 6px; }
+.auth-tag  { font-size: 11px; color: var(--gray); font-style: italic; margin-top: 4px; }
+.auth-form { display: flex; flex-direction: column; gap: 12px; }
+.auth-title { font-family: var(--font-head); font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+.input-wrap { position: relative; display: flex; align-items: center; }
+.input-icon { position: absolute; left: 14px; color: var(--gray); pointer-events: none; }
+.input-wrap input { padding-left: 40px; }
+.input-wrap input:only-child, .input-wrap:not(:has(.input-icon)) input { padding-left: 14px; }
+.input-toggle { position: absolute; right: 12px; color: var(--gray); }
+.auth-switch { text-align: center; font-size: 13px; color: var(--gray); padding: 24px 0; }
+.auth-switch a { color: var(--gold); font-weight: 600; }

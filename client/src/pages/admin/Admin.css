@@ -1,0 +1,39 @@
+.admin-wrap { min-height: 100dvh; padding-bottom: 74px; }
+.admin-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 13px 16px; position: sticky; top: 0; z-index: 50;
+  background: rgba(10,10,10,.97); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+.admin-header__back, .admin-header__out {
+  width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; color: var(--white);
+}
+.admin-header__title { font-family: var(--font-head); font-weight: 700; font-size: 14px; letter-spacing: 2px; }
+.admin-main { padding: 16px; }
+
+.admin-tabs {
+  position: fixed; bottom: 0; left: 0; right: 0; height: 66px;
+  background: rgba(10,10,10,.97); backdrop-filter: blur(16px);
+  border-top: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-around; z-index: 100;
+}
+.admin-tab { display: flex; flex-direction: column; align-items: center; gap: 3px; flex: 1; padding: 8px 0; color: var(--gray); font-size: 9px; font-weight: 600; letter-spacing: .5px; }
+.admin-tab.active { color: var(--white); }
+
+/* Admin shared */
+.admin-title { font-family: var(--font-head); font-size: 21px; font-weight: 800; margin-bottom: 16px; }
+.admin-head  { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.admin-add-btn {
+  width: 36px; height: 36px; background: var(--gold); color: #000;
+  border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center;
+}
+.form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+.form-group label { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--gray-light); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.form-hint { font-weight: 400; font-size: 10px; color: var(--gray); text-transform: none; letter-spacing: 0; }
+.seg-control { display: flex; gap: 4px; background: var(--surface); border-radius: var(--radius-sm); padding: 3px; }
+.seg-btn { flex:1; padding:8px; text-align:center; border-radius:6px; font-size:11px; font-weight:600; color:var(--gray); }
+.seg-btn.active { background: var(--gold); color: #000; }
+.toggle-label { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--gray-light); cursor: pointer; }
+.toggle-label input { width: auto; accent-color: var(--gold); }
+.toggle-row { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }

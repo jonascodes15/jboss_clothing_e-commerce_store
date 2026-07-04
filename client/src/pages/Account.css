@@ -1,0 +1,37 @@
+.account-profile { display: flex; align-items: center; gap: 14px; padding: 22px 0 20px; }
+.account-avatar {
+  width: 52px; height: 52px; border-radius: 50%;
+  background: var(--surface); border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-head); font-weight: 800; font-size: 20px; color: var(--gold);
+}
+.account-name  { font-weight: 700; font-size: 15px; }
+.account-email { font-size: 12px; color: var(--gray); margin-top: 2px; }
+
+.account-admin-link {
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(201,168,76,.1); border: 1px solid rgba(201,168,76,.3);
+  border-radius: var(--radius); padding: 14px 16px;
+  color: var(--gold); font-weight: 600; font-size: 13px; margin-bottom: 20px;
+}
+.account-links { display: flex; flex-direction: column; gap: 2px; margin-bottom: 20px; }
+.account-link {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 4px; border-bottom: 1px solid var(--border);
+  font-size: 14px; font-weight: 500;
+}
+.account-link__chev { margin-left: auto; color: var(--gray); }
+
+.account-ig {
+  display: flex; align-items: center; gap: 10px;
+  background: var(--bg-2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 14px 16px;
+  font-size: 13px; font-weight: 600; margin-bottom: 14px; color: var(--gold);
+}
+.account-logout {
+  display: flex; align-items: center; gap: 8px; justify-content: center;
+  width: 100%; padding: 14px;
+  color: var(--danger); font-weight: 600; font-size: 14px;
+  border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 24px;
+}
+.account-tag { text-align: center; font-size: 11px; color: var(--gray); font-style: italic; }

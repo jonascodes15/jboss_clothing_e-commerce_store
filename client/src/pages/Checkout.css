@@ -1,0 +1,28 @@
+.checkout-section { margin-bottom: 24px; }
+.addr-card {
+  display: flex; gap: 10px; align-items: flex-start;
+  width: 100%; text-align: left;
+  background: var(--bg-2); border: 1.5px solid var(--border);
+  border-radius: var(--radius); padding: 14px; margin-bottom: 10px;
+  transition: border-color .15s;
+}
+.addr-card.selected { border-color: var(--white); }
+.addr-card__icon { color: var(--gold); margin-top: 2px; flex-shrink: 0; }
+.addr-card__name  { font-size: 13px; font-weight: 700; margin-bottom: 3px; }
+.addr-card__line  { font-size: 12px; color: var(--gray-light); margin-bottom: 2px; }
+.addr-card__phone { font-size: 12px; color: var(--gray); }
+.addr-add {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13px; font-weight: 600; color: var(--gold); padding: 8px 0;
+}
+.addr-form { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
+.addr-form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.checkout-summary {
+  background: var(--bg-2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 16px;
+}
+.checkout-summary__row {
+  display: flex; justify-content: space-between;
+  font-size: 13px; color: var(--gray-light); padding: 5px 0;
+}
+.checkout-summary__row--total { font-size: 15px; font-weight: 700; color: var(--white); }

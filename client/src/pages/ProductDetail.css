@@ -1,0 +1,111 @@
+.pd-loading { display: flex; align-items: center; justify-content: center; min-height: 80dvh; }
+.pd { padding-bottom: 100px; }
+
+.pd-topbar {
+  position: absolute; top: 0; left: 0; right: 0;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 16px; z-index: 20;
+}
+.pd-icon-btn {
+  width: 36px; height: 36px;
+  background: rgba(10,10,10,.65); backdrop-filter: blur(8px);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  color: var(--white);
+}
+
+.pd-gallery__main {
+  width: 100%; aspect-ratio: 3/4;
+  background: var(--bg-2); overflow: hidden;
+}
+.pd-gallery__main img { width: 100%; height: 100%; object-fit: cover; }
+.pd-gallery__empty {
+  width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 56px;
+}
+.pd-gallery__thumbs {
+  display: flex; gap: 8px; padding: 10px 16px; overflow-x: auto;
+}
+.pd-thumb {
+  width: 52px; height: 68px; flex-shrink: 0;
+  border-radius: var(--radius-sm); overflow: hidden;
+  border: 1.5px solid var(--border); opacity: .55; transition: opacity .15s, border-color .15s;
+}
+.pd-thumb.active { border-color: var(--white); opacity: 1; }
+.pd-thumb img { width: 100%; height: 100%; object-fit: cover; }
+
+.pd-content { padding: 6px 16px; }
+.pd-cat {
+  font-size: 10px; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 6px;
+}
+.pd-name {
+  font-family: var(--font-head); font-size: 24px; font-weight: 800;
+  line-height: 1.1; margin-bottom: 12px;
+}
+.pd-price-row {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 8px;
+}
+.pd-price { font-size: 22px; }
+.pd-rating {
+  display: flex; align-items: center; gap: 4px;
+  font-size: 13px; font-weight: 700;
+}
+.pd-rating__count { color: var(--gray); font-weight: 400; font-size: 12px; }
+
+.pd-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 20px; }
+
+/* Variant pickers */
+.pd-option-group { margin-bottom: 20px; }
+.pd-option-label {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1px; margin-bottom: 10px; color: var(--gray-light);
+}
+.pd-option-value { color: var(--white); text-transform: none; letter-spacing: 0; font-weight: 600; }
+
+.pd-colors { display: flex; gap: 10px; flex-wrap: wrap; }
+.pd-sizes  { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.pd-low-stock {
+  font-size: 11px; color: var(--danger); margin-top: 8px; font-weight: 600;
+}
+
+.pd-desc { margin: 20px 0; }
+.pd-desc p { color: var(--gray-light); font-size: 13px; line-height: 1.8; margin-top: 6px; }
+
+.pd-specs {
+  display: flex; flex-direction: column; gap: 8px; margin: 16px 0;
+  background: var(--bg-2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 14px;
+}
+.pd-spec span { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--gray); }
+.pd-spec p    { font-size: 13px; margin-top: 2px; }
+
+.pd-preorder-note {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 12px; color: var(--gold);
+  background: rgba(201,168,76,.08); border: 1px solid rgba(201,168,76,.2);
+  border-radius: var(--radius-sm); padding: 10px 14px; margin-bottom: 20px;
+}
+
+.pd-reviews { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border); }
+.pd-review { padding: 14px 0; border-bottom: 1px solid var(--border); }
+.pd-review__head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.pd-review__avatar {
+  width: 30px; height: 30px; border-radius: 50%;
+  background: var(--gold); color: #000;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 12px; flex-shrink: 0;
+}
+.pd-review__name { font-size: 13px; font-weight: 600; }
+.pd-review__stars { display: flex; gap: 2px; margin-top: 2px; }
+.pd-review__body { font-size: 12px; color: var(--gray-light); line-height: 1.7; }
+
+.pd-cta {
+  position: fixed; bottom: var(--tab-h); left: 0; right: 0;
+  background: rgba(10,10,10,.97); backdrop-filter: blur(16px);
+  border-top: 1px solid var(--border);
+  padding: 12px 16px; z-index: 90;
+  max-width: 480px; margin: 0 auto;
+}

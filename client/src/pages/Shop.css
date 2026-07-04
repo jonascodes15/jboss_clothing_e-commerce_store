@@ -1,0 +1,56 @@
+.shop-topbar {
+  display: flex; align-items: center; gap: 10px;
+  padding: 14px 16px 10px;
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(10,10,10,.96); backdrop-filter: blur(12px);
+}
+.shop-search { flex: 1; position: relative; }
+.shop-search__icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--gray); pointer-events: none; }
+.shop-search input { padding-left: 36px; }
+
+.shop-filter-btn {
+  width: 42px; height: 42px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--white); flex-shrink: 0;
+}
+.shop-cats { padding: 0 16px 10px; }
+.shop-meta {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16px 12px;
+}
+.shop-count { font-size: 12px; color: var(--gray); }
+.shop-sort  { width: auto; padding: 6px 10px; font-size: 12px; font-weight: 600; }
+
+.shop-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 0 16px; }
+
+.shop-empty {
+  padding: 60px 16px; text-align: center;
+  display: flex; flex-direction: column; align-items: center; gap: 10px; color: var(--gray);
+}
+.shop-empty p:first-child { font-size: 40px; }
+
+.filter-overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,.65);
+  backdrop-filter: blur(4px); z-index: 200;
+  display: flex; align-items: flex-end;
+}
+.filter-drawer {
+  background: var(--bg-2); border-top: 1px solid var(--border);
+  border-radius: var(--radius) var(--radius) 0 0;
+  padding: 20px 20px calc(var(--tab-h) + 16px); width: 100%;
+}
+.filter-drawer__head {
+  display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;
+}
+.filter-drawer__head h3 { font-family: var(--font-head); font-size: 18px; font-weight: 700; }
+.filter-group { margin-bottom: 16px; }
+.filter-label { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+.filter-opt {
+  display: block; width: 100%; text-align: left; padding: 12px 14px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); color: var(--white); margin-bottom: 8px;
+  font-size: 13px; transition: border-color .15s;
+}
+.filter-opt.selected { border-color: var(--gold); color: var(--gold); }

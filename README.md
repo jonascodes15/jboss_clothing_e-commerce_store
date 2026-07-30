@@ -1,7 +1,5 @@
 # Jboss Clothing — E-commerce Web App
 
-**"Wear what you are."**
-
 Mobile-first clothing e-commerce app. React (Vite) + Node.js/Express + MySQL + Paystack.
 
 ---

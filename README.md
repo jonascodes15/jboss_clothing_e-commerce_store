@@ -6,14 +6,6 @@ Mobile-first clothing e-commerce app. React (Vite) + Node.js/Express + MySQL + P
 
 ---
 
-## Key difference from a furniture app: Variants
-
-Every product has **size × color combinations**, each with its own stock count.  
-When a customer adds to cart, they must pick a size AND a color first.  
-Stock is deducted per-variant when payment is confirmed (not when order is placed).
-
----
-
 ## 1. Project Structure
 
 ```
